@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>wanted主页</title>
+    <style>
+        .title_1{
+            font-size: 400%;
+            font-family:Comic Sans MS, cursive, sans-serif;
+            color: #FFD026;
+            text-shadow: 5px 5px 2px #A6A6A6;
+            text-align: center;
+            height: 30%;
+        }
+        .login{
+            width: 100%;
+            overflow: auto;
+        }
+        .main{
+            background-color:gray;
+            border: 6px solid white;
+            border-radius: 4px;
+            background-color: rgba(255,255,255,0.4);
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #555555;
+            top: 0;
+            width: 100%;
+        }
+
+        .list li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: gray;
+            color: black;
+        }
+        .active{
+            background-color: #FFD026;
+        }
+        .frame{
+            height: 600px;
+            width:100%;
+            padding:0;
+            margin:0;
+            border: none;
+        }
+    </style>
+</head>
+<body background="main.jpg">
+<div class="login">
+    <h1 class="title_1">wanted</h1>
+    <p style="float: right;font-size: 100%;margin-right: 5%">
+        欢迎，
+        <a href="personal_page.html"><%=
+        request.getParameter("account")
+        %></a>
+    </p>
+</div>
+<div class="main">
+    <div class="list">
+    <ul>
+    <li  class="active"><a href="main_main_page.html" target="iframe_a">主页</a></li>
+    <li><a href="type1.html" target="iframe_a">类型1</a></li>
+    <li><a href="type2.html" target="iframe_a">类型2</a></li>
+    <li><a href="type3.html" target="iframe_a">类型3</a></li>
+        <li><a href="type4.html" target="iframe_a">类型4</a></li>
+    <li style="float: right"><a href="create_wanted.html" target="_blank"  class="active">发布wanted</a></li>
+    </ul>
+    </div>
+    <iframe  class="frame" name="iframe_a" src="main_main_page.html"></iframe>
+</div>
+<script>
+    var lis = document.querySelector(".list").querySelectorAll("li");
+    for (var i = 0; i < lis.length; i++) {
+        lis[i].setAttribute("index", i);
+        lis[i].onclick = function () {
+            for (var j = 0; j < lis.length; j++) {
+                lis[j].className = "";
+            }
+            this.className = "active";
+        }
+    }
+</script>
+</body>
+</html>

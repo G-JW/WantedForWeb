@@ -1,0 +1,186 @@
+<html>
+<head>
+    <title>个人主页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        .title_1{
+            font-size: 300%;
+            font-family:Comic Sans MS, cursive, sans-serif;
+            color: #FFD026;
+            text-shadow: 5px 5px 2px #A6A6A6;
+            height: 10%;
+            margin-left: 10%;
+        }
+        .head{
+            width: 100%;
+            overflow: auto;
+        }
+        .main{
+            background-color:gray;
+            border: 6px solid white;
+            border-radius: 4px;
+            background-color: rgba(255,255,255,0.4);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+            height: 800px;
+            overflow: scroll;
+        }
+        .title_2{
+            margin: 0;
+            overflow: hidden;
+            background-color: #FFD026;
+            top: 0;
+            width: 100%;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 0px 0px;
+            text-decoration: none;
+            font-size: 200%;
+        }
+        #photo{
+            margin: 30px;
+            padding: 0px;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        .data{
+            height: auto;
+        }
+        .data_1{
+            margin: 60px 30px 30px 100px;
+            padding: 0;
+        }
+        .frame{
+            margin: 30px;
+            width: 1200px;
+            height: 200px;
+            overflow: scroll;
+            border: #FFD026 solid;
+            background-color: #A6A6A6;
+        }
+        .status{
+            float:left;
+            padding: 10px;
+            border-radius: 4px;
+            border: #FFD026 solid;
+            width: 10%;
+            text-align: center;
+            color: #A6A6A6;
+        }
+        table,td,th
+        {
+            border:2px solid gray;
+        }
+        table {
+            width:100%;
+        }
+        th {
+            height:50px;
+            background-color: #FFD026;
+            color: black;
+        }
+        td{
+            text-align: left;
+        }
+    </style>
+</head>
+<body background="img/personal_page.png">
+<div class="head">
+    <h1 class="title_1">wanted</h1>
+    <p style="float: left;font-size: 100%;margin-left: 10%">
+        <a href="main.html" style="color: white;margin-top: 0">返回主页</a>
+    </p>
+    <p style="float: right;font-size: 100%;margin-right: 10%">
+        <a href="modified_data.html" style="color: white;margin-top: 0">修改资料</a>
+    </p>
+</div>
+<div class="main">
+    <div style="position: -webkit-sticky;position: sticky;top: 0px">
+        <p class="title_2">个人信息</p>
+    </div>
+    <div class="data">
+        <img id="photo" src="img/w_head.jpg">
+        <h1 style="margin: 30px;padding-top: 30px">这是名字</h1><h2 style="margin:30px">这是学校+学院</h2>
+        <p class="status">请选择你的状态</p>
+    </div>
+    <br>
+    <br>
+    <div class="data_1">
+        <h3>个人信息</h3>
+        <br>
+        <br>
+        <hr style="border:#FFD026 2px solid;align-self: center">
+    </div>
+    <p style="font-size: 20px;margin-left: 30px">发布的wanted</p>
+    <div class="frame">
+        <table>
+            <tr>
+                <th width="10%">wanted_id</th>
+                <th>wanted_head</th>
+                <th>发起人</th>
+                <th width="10%">参与人数</th>
+                <th>简介</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>wanted组队</td>
+                <td>Peter<</td>
+                <td>1/6</td>
+                <td>急需后端人员</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>wanted组队</td>
+                <td>Peter<</td>
+                <td>1/6</td>
+                <td>急需后端人员</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>wanted组队</td>
+                <td>Peter<</td>
+                <td>1/6</td>
+                <td>急需后端人员</td>
+            </tr>
+        </table>
+    </div>
+    <p style="font-size: 20px;margin-left: 30px">参加的wanted</p>
+    <div class="frame">
+        <table>
+            <tr>
+                <th width="10%">wanted_id</th>
+                <th>wanted_head</th>
+                <th>发起人</th>
+                <th width="10%">参与人数</th>
+                <th>简介</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>wanted组队</td>
+                <td>Peter<</td>
+                <td>1/6</td>
+                <td>急需后端人员</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>wanted组队</td>
+                <td>Peter<</td>
+                <td>1/6</td>
+                <td>急需后端人员</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>wanted组队</td>
+                <td>Peter<</td>
+                <td>1/6</td>
+                <td>急需后端人员</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
